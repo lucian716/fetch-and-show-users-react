@@ -1,6 +1,7 @@
 import "./App.scss";
 import { useEffect, useState } from "react";
-import parsedData from "./common/dataSource";
+
+
 
 function App() {
   const [data, setData] = useState({
@@ -11,14 +12,21 @@ function App() {
 
   useEffect(() => {
 
-    fetch("https://randomuser.me/api/?inc=name,picture&results=48")
-      .then((data) => {
-        return data.json();
-      })
-      .then((data) => {
-        setData(data);
-      })
-      .catch((error) => { console.log(error) });
+    // fetch("https://randomuser.me/api/?inc=name,picture&results=48")
+      // .then((data) => {
+      //   return data.json();
+      // })
+      // .then((data) => {
+      //   setData(data);
+      // })
+      // .catch((error) => { console.log(error) });
+    
+    (async () => {
+      console.log('Hello')
+    const rawData = await fetch("https://randomuser.me/api/?inc=name,picture&results=48");
+      const data = await rawData.json();
+      setData(data);
+    })()    
     
        }, []);
 
