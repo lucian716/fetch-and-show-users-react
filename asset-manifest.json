@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fetch-and-show-users-react/static/css/main.cfd6093a.css",
+    "main.js": "/fetch-and-show-users-react/static/js/main.d556ed13.js",
+    "index.html": "/fetch-and-show-users-react/index.html",
+    "main.cfd6093a.css.map": "/fetch-and-show-users-react/static/css/main.cfd6093a.css.map",
+    "main.d556ed13.js.map": "/fetch-and-show-users-react/static/js/main.d556ed13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfd6093a.css",
+    "static/js/main.d556ed13.js"
+  ]
+}
